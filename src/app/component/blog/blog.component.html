@@ -1,0 +1,25 @@
+<div class="text-center">
+    <h1>Technology Blogs</h1>
+
+    <button mat-raised-button color="primary" (click)="addBlog()">Add Blog</button>
+    <mat-divider class="m-3"></mat-divider>
+
+
+    <div class="blog" *ngFor="let item of blogList">
+        <mat-card class="shadow">
+            <mat-card-header>
+                <div class="cabecera">
+                    <h2>{{item.title}}</h2>
+                    <div>
+                        <button mat-raised-button color="primary" class="me-2" (click)="editBlog(item.id)"><mat-icon fontIcon="edit"></mat-icon>Edit</button>
+                        <button mat-raised-button color="accent" (click)="removeBlog(item.id)"><mat-icon fontIcon="delete"></mat-icon>Delete</button>
+                    </div>
+                </div>
+            </mat-card-header>
+            <mat-card-content>
+                <p>{{item.description}}</p>
+            </mat-card-content>
+        </mat-card>
+    </div>
+</div>
+

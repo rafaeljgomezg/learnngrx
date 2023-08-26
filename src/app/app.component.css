@@ -1,0 +1,22 @@
+
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Make the wrapper at least the height of the viewport */
+  }
+
+.content {
+    flex: 1; /* Allow the content to expand to fill remaining space */
+    padding: 20px; /* Add padding for spacing */
+  }
+
+
+footer {
+    background-color: rgb(74, 74, 235);
+    color: white;
+    padding: 10px 0; /* Adjust padding for spacing within the footer */
+    text-align: center;
+    position: sticky;
+    bottom: 0; /* Stick the footer to the bottom of the viewport */
+  }

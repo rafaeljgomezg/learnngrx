@@ -1,0 +1,9 @@
+.tarjeta{
+    width: 100%;
+    display:flex;
+    justify-content: center;
+}
+
+.entry{
+    width: 35%;
+}

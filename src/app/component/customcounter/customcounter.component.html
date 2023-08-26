@@ -1,0 +1,24 @@
+
+<div class="tarjeta">
+    <mat-card class="entry">
+        <mat-card-content>
+            <h1>{{ channelName }}</h1>
+            <mat-form-field>
+                <mat-label for="counter">Counter Input</mat-label>
+                <input matInput [(ngModel)]="counterinput">
+            </mat-form-field>
+            <br>
+            <mat-form-field>
+                <mat-label for="type">Action Type</mat-label>
+                <mat-select [(ngModel)]="actionType">
+                    <mat-option value="add">Add</mat-option>
+                    <mat-option value="remove">Decrement</mat-option>
+                </mat-select>
+            </mat-form-field>
+
+            <mat-divider></mat-divider>
+            <button class="m-2" mat-raised-button color="primary" (click)="onIncrement()">Execute</button>
+        </mat-card-content>
+
+    </mat-card>
+</div>

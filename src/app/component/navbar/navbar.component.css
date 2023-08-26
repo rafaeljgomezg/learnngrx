@@ -1,0 +1,10 @@
+.menu{
+    width: 100%;
+    background-color: rgb(74, 74, 235);
+    position: sticky;
+    top: 0; /* Stick the navbar to the top of the viewport */
+    z-index: 1000; /* Ensure the navbar appears above other content */
+}
+.menu-item{
+    color: white;
+}

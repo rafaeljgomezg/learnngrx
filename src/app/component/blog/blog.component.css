@@ -1,0 +1,17 @@
+.blog{
+    display: flex;
+    margin: 15px;
+    justify-content: center;
+    
+}
+
+.shadow{
+    width: 35%;
+}
+
+.cabecera{
+    width: 100%;
+    display: inline-flex;
+    justify-content: space-between;
+
+}
